@@ -6,12 +6,9 @@ import helmet from 'helmet';
 
 import hpp from 'hpp';
 import mongoose from 'mongoose';
-
-import mongoSanitize from 'express-mongo-sanitize';
 import morgan from 'morgan';
 
 import rateLimit from 'express-rate-limit';
-import xss from 'xss-clean';
 
 import adminCouponV1Router from './routes/admin/coupon.routes.js';
 import {mongoDBUri} from "./config/config.js";
@@ -33,9 +30,7 @@ app.use(express.json());
 app.use(helmet());
 app.use(cors());
 app.use(morgan.format('dev'));
-app.use(xss());
 app.use(hpp());
-app.use(mongoSanitize());
 app.use(expressUserAgent.express());
 
 const limiter = rateLimit({windowMs: 15 * 60 * 1000, max: 100});
