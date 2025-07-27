@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6801f62e-77d6-4358-8baf-a013becf3322" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.example.env" beforeDir="false" afterPath="$PROJECT_DIR$/.example.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/admin/coupons/coupons.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/admin/v1/coupons/coupons.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/admin/coupons/coupons.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/admin/v1/coupons/coupons.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/admin/coupon.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/admin/coupon.route.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +31,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;stanleyHayes&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/stanleyHayes/stayup-api&quot;,
+    &quot;accountId&quot;: &quot;e440160d-618b-4db3-8434-5750cbf29b13&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -32,28 +53,43 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Node.js.console.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/stanleyasokuhayford/Desktop/Dev/JS/ExpressJS/stayup-api",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/shayford/Desktop/Dev/JS/Express/stayup-api/src/routes/admin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font",
+    "ts.external.directory.path": "/Users/shayford/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/routes/admin" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/controllers/admin/v1" />
       <recent name="$PROJECT_DIR$/src/schemas" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.console.js">
+    <configuration name="console.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/consoles/db/8bc18b95-4905-46ac-9875-0e943499a432/console.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -66,6 +102,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.console.js" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -73,7 +110,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-WS-251.25410.73" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.26927.40" />
       </set>
     </attachedChunks>
   </component>
@@ -91,6 +128,13 @@
       <workItem from="1745827732343" duration="17492000" />
       <workItem from="1746064680694" duration="592000" />
       <workItem from="1746182453151" duration="774000" />
+      <workItem from="1746268783311" duration="42000" />
+      <workItem from="1746276157805" duration="1118000" />
+      <workItem from="1746279427338" duration="1226000" />
+      <workItem from="1746610540032" duration="1197000" />
+      <workItem from="1747821504252" duration="596000" />
+      <workItem from="1747935330996" duration="4861000" />
+      <workItem from="1753544826765" duration="9483000" />
     </task>
     <servers />
   </component>

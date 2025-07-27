@@ -4,7 +4,7 @@ import {
     deleteCoupon,
     getAllCoupons,
     getCoupon, updateCoupon
-} from "../../controllers/admin/coupons/coupons.controller.js";
+} from "../../controllers/admin/v1/coupons/coupons.controller.js";
 
 const router = Router({mergeParams: true});
 

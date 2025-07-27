@@ -2,12 +2,12 @@ import moment from "moment";
 import mongoose from "mongoose";
 import status from "http-status";
 
-import Coupon from "../../../models/Coupon.js";
-import Customer from "../../../models/Customer.js";
-import Product from "../../../models/Product.js";
-import Category from "../../../models/Category.js";
+import Coupon from "../../../../models/Coupon.js";
+import Customer from "../../../../models/Customer.js";
+import Product from "../../../../models/Product.js";
+import Category from "../../../../models/Category.js";
 
-import {validateExistence} from "../../../utils/helpers.js";
+import {validateExistence} from "../../../../utils/helpers.js";
 
 export const createCoupon = async (req, res) => {
     console.info("Session Started")
