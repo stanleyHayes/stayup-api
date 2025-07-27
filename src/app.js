@@ -12,6 +12,8 @@ import rateLimit from 'express-rate-limit';
 
 import adminCouponV1Router from './routes/admin/coupon.route.js';
 import adminShippingMethodV1Router from './routes/admin/shipping-method.route.js';
+import adminShippingZoneV1Router from './routes/admin/shipping-zone.route.js';
+
 import {mongoDBUri} from "./config/config.js";
 
 dotenv.config();
@@ -39,6 +41,7 @@ app.use(limiter);
 
 app.use('/api/v1/admin/coupons', adminCouponV1Router);
 app.use('/api/v1/admin/shipping-methods', adminShippingMethodV1Router);
+app.use('/api/v1/admin/shipping/zones', adminShippingZoneV1Router);
 
 export default app;
 

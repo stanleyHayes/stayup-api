@@ -8,7 +8,7 @@ export const getShippingMethods = async (req, res) => {
             page = 1,
             size = 10,
             fields,          // Projection fields e.g., "title,description"
-            sort = 'createdAt', // Sorting e.g., "-createdAt"
+            sort = '-created_at', // Sorting e.g., "-createdAt"
             title,
             description,
             ...otherFilters   // Catch any other dynamic filters
@@ -208,8 +208,8 @@ export const deleteShippingMethod = async (req, res) => {
                 data: null
             });
         }
-        method.is_deleted = true;
-        await ShippingMethod.updateOne({_id: id}, req.body, {
+
+        await ShippingMethod.updateOne({_id: id}, {is_deleted: true}, {
             runValidators: true,
             new: true,
         });

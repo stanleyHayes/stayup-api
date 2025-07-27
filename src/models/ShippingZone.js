@@ -9,25 +9,15 @@ const ShippingZoneSchema = new Schema({
     title: {
         type: String,
         required: [true, 'Title Required'],
-        trim: true,
-    },
-    order: {
-        type: Number,
-        required: [true, 'Order Number Required']
+        trim: true
     },
     enabled: {
         type: Boolean,
         default: false
     },
-    method_title: {
-        type: String,
-        required: [true, 'Method Title Required'],
-        trim: true,
-    },
-    method_description: {
-        type: String,
-        required: [true, 'Method Title Required'],
-        trim: true,
+    is_deleted: {
+        type: Boolean,
+        default: false
     }
 }, {timestamps: {createdAt: "created_at", updatedAt: "updated_at"}});
 
