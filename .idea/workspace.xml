@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6801f62e-77d6-4358-8baf-a013becf3322" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.example.env" beforeDir="false" afterPath="$PROJECT_DIR$/.example.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/admin/coupons/coupons.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/admin/v1/coupons/coupons.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/admin/coupons/coupons.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/admin/v1/coupons/coupons.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/admin/coupon.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/admin/coupon.route.js" afterDir="false" />
-    </list>
+    <list default="true" id="6801f62e-77d6-4358-8baf-a013becf3322" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,7 +123,7 @@
       <workItem from="1746610540032" duration="1197000" />
       <workItem from="1747821504252" duration="596000" />
       <workItem from="1747935330996" duration="4861000" />
-      <workItem from="1753544826765" duration="9483000" />
+      <workItem from="1753544826765" duration="10065000" />
     </task>
     <servers />
   </component>
