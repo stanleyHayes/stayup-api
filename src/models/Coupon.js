@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import MetadataSchema from "../schemas/Metadata.js";
+import MetadataSchema from "../schemas/metadata.schema.js";
 
 const CouponSchema = new mongoose.Schema({
     code: {

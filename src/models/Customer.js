@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 import validator from "validator";
 
-import AddressSchema from "../schemas/Address.js";
+import AddressSchema from "../schemas/address.schema.js";
 import LoginSessionSchema from "../schemas/LoginSession.js";
-import DeviceSchema from "../schemas/DeviceSchema.js";
+import DeviceSchema from "../schemas/device.schema.js";
 
 
 // Full Customer Schema

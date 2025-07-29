@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import validator from "validator"; // Add this to validate URLs
+import validator from "validator";
 
 export const ImageSchema = new mongoose.Schema({
     name: {
@@ -25,12 +25,6 @@ export const ImageSchema = new mongoose.Schema({
             message: 'Invalid image URL'
         }
     }
-}, {
-    timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
-    toJSON: { virtuals: true },
-    toObject: { virtuals: true }
 });
 
-const Image = mongoose.model("Image", ImageSchema);
-
-export default Image;
+export default ImageSchema;

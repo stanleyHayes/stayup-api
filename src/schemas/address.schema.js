@@ -40,7 +40,7 @@ const AddressSchema = new mongoose.Schema({
     },
     address_1: {
         type: String,
-        required: [true, 'Address Line 1 is required']
+        required: [true, 'AddressModel Line 1 is required']
     },
     address_2: {
         type: String
@@ -74,7 +74,6 @@ const AddressSchema = new mongoose.Schema({
     community_or_area: {
         type: String
     }
-}, { _id: false });
-
+});
 
 export default AddressSchema;

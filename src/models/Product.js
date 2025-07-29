@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
-import {ImageSchema} from "./Image.js";
+import {ImageSchema} from "../schemas/image.schema.js";
 import {updateCategoryProductCounts} from "../utils/helpers.js";
-import MetadataSchema from "../schemas/Metadata.js";
+import MetadataSchema from "../schemas/metadata.schema.js";
 
 // Dimensions schema
 const dimensionsSchema = new mongoose.Schema({

@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import MetadataSchema from "../schemas/Metadata.js";
+import MetadataSchema from "../schemas/metadata.schema.js";
 
 // Tax lines schema
 const TaxLineSchema = new mongoose.Schema({
@@ -10,7 +10,7 @@ const TaxLineSchema = new mongoose.Schema({
     tax_total: String,
     shipping_tax_total: String,
     meta_data: [MetadataSchema]
-}, { _id: false });
+}, {_id: false});
 
 // Line item schema
 const LineItemSchema = new mongoose.Schema({
@@ -27,7 +27,7 @@ const LineItemSchema = new mongoose.Schema({
     meta_data: [MetadataSchema],
     sku: String,
     price: String
-}, { _id: false });
+}, {_id: false});
 
 // Shipping line schema
 const ShippingLineSchema = new mongoose.Schema({
@@ -37,18 +37,18 @@ const ShippingLineSchema = new mongoose.Schema({
     total_tax: String,
     taxes: [TaxLineSchema],
     meta_data: [MetadataSchema]
-}, { _id: false });
+}, {_id: false});
 
 // Fee line schema
 const FeeLineSchema = new mongoose.Schema({
     name: String,
     tax_class: String,
-    tax_status: { type: String, enum: ["taxable", "none"] },
+    tax_status: {type: String, enum: ["taxable", "none"]},
     total: String,
     total_tax: String,
     taxes: [TaxLineSchema],
     meta_data: [MetadataSchema]
-}, { _id: false });
+}, {_id: false});
 
 // Coupon line schema
 const CouponLineSchema = new mongoose.Schema({
@@ -56,15 +56,15 @@ const CouponLineSchema = new mongoose.Schema({
     discount: String,
     discount_tax: String,
     meta_data: [MetadataSchema]
-}, { _id: false });
+}, {_id: false});
 
 // Refund schema
 const RefundSchema = new mongoose.Schema({
     reason: String,
     total: String
-}, { _id: false });
+}, {_id: false});
 
-// Address schema (billing and shipping)
+// AddressModel schema (billing and shipping)
 const AddressSchema = new mongoose.Schema({
     first_name: String,
     last_name: String,
@@ -77,19 +77,23 @@ const AddressSchema = new mongoose.Schema({
     country: String,
     email: String,
     phone: String
-}, { _id: false });
+}, {_id: false});
 
 // Main Order Schema
 const OrderSchema = new mongoose.Schema({
-    parent_id: { type: mongoose.Schema.Types.ObjectId, ref: "Order", default: null },
-    number: { type: String },
-    order_key: { type: String },
-    created_via: { type: String },
-    version: { type: String },
-    status: { type: String, enum: ["pending", "processing", "on-hold", "completed", "cancelled", "refunded", "failed", "trash"], default: "pending" },
-    currency: { type: String, default: "USD" },
-    date_created: { type: Date, default: Date.now },
-    date_modified: { type: Date, default: Date.now },
+    parent_id: {type: mongoose.Schema.Types.ObjectId, ref: "Order", default: null},
+    number: {type: String},
+    order_key: {type: String},
+    created_via: {type: String},
+    version: {type: String},
+    status: {
+        type: String,
+        enum: ["pending", "processing", "on-hold", "completed", "cancelled", "refunded", "failed", "trash"],
+        default: "pending"
+    },
+    currency: {type: String, default: "USD"},
+    date_created: {type: Date, default: Date.now},
+    date_modified: {type: Date, default: Date.now},
     discount_total: String,
     discount_tax: String,
     shipping_total: String,
@@ -97,8 +101,8 @@ const OrderSchema = new mongoose.Schema({
     cart_tax: String,
     total: String,
     total_tax: String,
-    prices_include_tax: { type: Boolean, default: false },
-    customer_id: { type: mongoose.Schema.Types.ObjectId, ref: "Customer", default: null },
+    prices_include_tax: {type: Boolean, default: false},
+    customer_id: {type: mongoose.Schema.Types.ObjectId, ref: "Customer", default: null},
     customer_ip_address: String,
     customer_user_agent: String,
     customer_note: String,
@@ -117,11 +121,11 @@ const OrderSchema = new mongoose.Schema({
     fee_lines: [FeeLineSchema],
     coupon_lines: [CouponLineSchema],
     refunds: [RefundSchema],
-    set_paid: { type: Boolean, default: false }
+    set_paid: {type: Boolean, default: false}
 }, {
-    timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
-    toJSON: { virtuals: true },
-    toObject: { virtuals: true }
+    timestamps: {createdAt: 'created_at', updatedAt: 'updated_at'},
+    toJSON: {virtuals: true},
+    toObject: {virtuals: true}
 });
 
 const Order = mongoose.model("Order", OrderSchema);

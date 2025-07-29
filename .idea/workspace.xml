@@ -5,12 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6801f62e-77d6-4358-8baf-a013becf3322" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controllers/admin/v1/shipping-zones/shipping-zones.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/admin/v1/shipping-methods/shipping-methods.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/admin/v1/shipping-methods/shipping-methods.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/admin/v1/shipping-zone-methods/shipping-zone-methods.controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/ShippingZoneMethod.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/ShippingZone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/admin/v1/shipping-zone-locations/shipping-zone-locations.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/admin/v1/shipping-zone-locations/shipping-zone-locations.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Coupon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Coupon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Customer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Customer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Image.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/schemas/image.schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Variation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Variation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/schemas/Address.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/schemas/address.schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/schemas/DeviceSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/schemas/device.schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/schemas/Metadata.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/schemas/metadata.schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/helpers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +53,9 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2wGAzki1AzyW8ikcgm0JDnpQNxM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -77,8 +90,9 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/controllers/admin/v1" />
       <recent name="$PROJECT_DIR$/src/schemas" />
+      <recent name="$PROJECT_DIR$/src/models" />
+      <recent name="$PROJECT_DIR$/src/controllers/admin/v1" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -131,7 +145,7 @@
       <workItem from="1747821504252" duration="596000" />
       <workItem from="1747935330996" duration="4861000" />
       <workItem from="1753544826765" duration="10977000" />
-      <workItem from="1753606051742" duration="7567000" />
+      <workItem from="1753606051742" duration="23393000" />
     </task>
     <servers />
   </component>

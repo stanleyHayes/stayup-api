@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { ImageSchema } from "./Image.js";
+import { ImageSchema } from "../schemas/image.schema.js";
 
 // Helper function to generate slug
 const slugify = (text) => {

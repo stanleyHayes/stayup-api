@@ -32,7 +32,6 @@ export const createZoneLocation = async (req, res) => {
     }
 };
 
-
 export const createBulkZoneLocations = async (req, res) => {
     try {
         const {locations} = req.body;
@@ -67,7 +66,6 @@ export const createBulkZoneLocations = async (req, res) => {
     }
 };
 
-
 export const updateZoneLocation = async (req, res) => {
     try {
         const {id} = req.params;
@@ -99,7 +97,6 @@ export const updateZoneLocation = async (req, res) => {
         res.status(httpStatuses.INTERNAL_SERVER_ERROR.code).json({message: error.message});
     }
 };
-
 
 export const getSingleZoneLocation = async (req, res) => {
     try {
@@ -184,7 +181,6 @@ export const getAllZoneLocations = async (req, res) => {
         res.status(httpStatuses.INTERNAL_SERVER_ERROR.code).json({message: error.message});
     }
 };
-
 
 export const getLocationsByZone = async (req, res) => {
     try {
